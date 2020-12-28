@@ -31,6 +31,7 @@
 - Override the vhost on a RabbitMQ scaler via `vhostName` in the metadata. ([#1451](https://github.com/kedacore/keda/pull/1451))
 - Reduce unnecessary /scale requests from ScaledObject controller ([#1453](https://github.com/kedacore/keda/pull/1453))
 - Improve performance when fetching pod information ([#1457](https://github.com/kedacore/keda/pull/1457))
+- Improve performance when fetching current scaling information on Deployments ([#1458](https://github.com/kedacore/keda/pull/1458))
 
 ### Breaking Changes
 
