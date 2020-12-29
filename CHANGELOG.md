@@ -27,6 +27,7 @@
 - Mask password in postgres scaler auto generated metricName. ([PR #1381](https://github.com/kedacore/keda/pull/1381))
 - Bug fix for pending jobs in ScaledJob's accurateScalingStrategy . ([#1323](https://github.com/kedacore/keda/issues/1323))
 - Fix memory leak because of unclosed scalers. ([#1413](https://github.com/kedacore/keda/issues/1413))
+- Automatically determine the RabbitMQ protocol when possible, and support setting the protocl via TriggerAuthentication ([#1459](https://github.com/kedacore/keda/pulls/1459))
 
 ### Breaking Changes
 
