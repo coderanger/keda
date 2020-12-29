@@ -32,6 +32,7 @@
 - Reduce unnecessary /scale requests from ScaledObject controller ([#1453](https://github.com/kedacore/keda/pull/1453))
 - Improve performance when fetching pod information ([#1457](https://github.com/kedacore/keda/pull/1457))
 - Improve performance when fetching current scaling information on Deployments ([#1458](https://github.com/kedacore/keda/pull/1458))
+- Automatically determine the RabbitMQ protocol when possible, and support setting the protocl via TriggerAuthentication ([#1459](https://github.com/kedacore/keda/pulls/1459))
 
 ### Breaking Changes
 

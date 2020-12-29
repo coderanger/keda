@@ -50,6 +50,14 @@ var testRabbitMQMetadata = []parseRabbitMQMetadataTestData{
 	{map[string]string{"vhostName": "myVhost", "queueName": "namespace/name", "hostFromEnv": host}, false, map[string]string{}},
 	// vhost passed but empty
 	{map[string]string{"vhostName": "", "queueName": "namespace/name", "hostFromEnv": host}, false, map[string]string{}},
+	// protocol defined in authParams
+	{map[string]string{"queueName": "sample", "hostFromEnv": host}, false, map[string]string{"protocol": "http"}},
+	// auto protocol and a bad URL
+	{map[string]string{"queueName": "sample", "host": "something://"}, true, map[string]string{}},
+	// auto protocol and an HTTP URL
+	{map[string]string{"queueName": "sample", "host": "http://"}, false, map[string]string{}},
+	// auto protocol and an HTTPS URL
+	{map[string]string{"queueName": "sample", "host": "https://"}, false, map[string]string{}},
 }
 
 var rabbitMQMetricIdentifiers = []rabbitMQMetricIdentifier{
